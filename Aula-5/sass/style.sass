@@ -1,0 +1,10 @@
+@mixin texts($color,$font-size,$width)
+    color:$color
+    font-size: $font-size
+    width: $width
+
+.texts
+    h1
+        @include texts(blue,2rem,2rem)
+    p
+        @include texts (red,1rem,1rem)
